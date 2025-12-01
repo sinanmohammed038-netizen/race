@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css" />
+</head>
+
+<body>
+
+
+    <style>
+        .gallery-img img {
+            height: 280px;
+            object-fit: cover;
+        }
+    </style>
+
+    <section id="Gallery">
+        <div class="container">
+            <h2>gallery</h2>
+            <p>BMW M4</p>
+            <div class="row g-3">
+                <div class="col-md-3">
+                    <div class="gallery-img">
+                        <a href="img/img-1.avif" data-fancybox="gallery">
+                            <img src="img/img-1.avif" alt="" width="100%">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="gallery-img">
+                        <a href="img/img-2.avif" data-fancybox="gallery">
+                            <img src="img/img-2.avif" alt="" width="100%">
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-img">
+                        <a href="img/img-3.avif" data-fancybox="gallery">
+                            <img src="img/img-3.avif" alt="" width="100%">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="gallery-img">
+                        <a href="img/img-4.avif" data-fancybox="gallery">
+                            <img src="img/img-4.avif" alt="" width="100%">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-img">
+                        <a href="img/img-5.avif" data-fancybox="gallery">
+                            <img src="img/img-5.avif" alt="" width="100%">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="gallery-img">
+                        <a href="img/img-6.avif" data-fancybox="gallery">
+                            <img src="img/img-6.avif"" width=" 100%">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-MXe5EK5gyK+fbhwQy/dukwz9fw71HZcsM4KsyDBDTvMyjymkiO0M5qqU0lF4vqLI4VnKf1+DIKf1GM6RFkO8PA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+
+        });
+    </script>
+</body>
+
+</html>

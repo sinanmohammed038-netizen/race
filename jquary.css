@@ -1,0 +1,44 @@
+.bulb{
+    border: solid 1px black;
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    transition: 0.3s;
+    background: transparent;
+}
+
+.current{
+    background: yellow;
+    box-shadow: 1px 1px 1px yellow;
+    border-color: (255, 255, 155);
+    border: solid 2px yellow;
+}
+
+#mobile-menu{
+    padding: 70px 10px;
+}
+.menu span{
+    display: inline-block;
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    position: relative;
+    transition: 0.3s;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.menu.clicked .one{
+    transform: rotate(45deg);
+    top: 10px;
+}
+.menu.clicked .two{
+    background: transparent;
+    right: 8px;
+}
+.menu.clicked .three{
+    transform: rotate(-45deg);
+    bottom: 10px; 
+}

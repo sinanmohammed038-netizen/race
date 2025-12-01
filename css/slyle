@@ -1,0 +1,13 @@
+.h2 {
+    font-size: 40px;
+    color: red;
+}
+
+.gallery#p{
+    font-size: 15px;
+    color: blue;
+}
+.gallery-img img{
+    height: 280px;
+    object-fit: cover;
+}

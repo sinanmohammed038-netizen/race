@@ -1,0 +1,112 @@
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+span{
+    display: inline-block;
+}
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* extra classes for not usig bootstrap container */
+    padding: 5px 35px;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    /* margin: 0 auto; */    
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+    transition: 0.3s all;
+}
+/* .toggler */
+.toggler{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+    width: max-content;
+    z-index: 1;
+    position: relative;
+}
+.toggler span{
+    width: 40px;
+    height: 3px;
+    background: black;
+    border-radius: 5px;
+    position: relative; /* for rotatino */
+    transition: 0.3s; /*for smooth animation */
+}
+.toggler span:nth-child(2){
+    width: 30px;
+}
+.toggler.clicked span:nth-child(1){
+    transform: rotate(43deg) translateY(5px) translateX(9px) ;
+}
+.toggler.clicked span:nth-child(2){
+    transform: translateX(10px);
+    opacity: 0;
+    transition: 0.1s;
+    /*diaplay */
+}
+.toggler.clicked span:nth-child(3){
+    transform: rotate(-43deg) translateY(-6px) translateX(11px);
+}
+.mobile-menu{
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    background: peachpuff;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: 0.3s;
+
+    right: -100vh;
+    opacity: 0;
+    transition: 0.3s;
+    visibility: hidden;
+}
+.mobile-menu ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.mobile-menu.clicked{
+    opacity: 1;
+    right: 0;
+    transition: 0.5s;
+    visibility: visible;
+}
+.mobile {
+    /* display: none; */
+
+}
+@media screen and (max-width:768px) {
+    .mobli{
+        display: block;
+    }
+} 
+@media screen and (max-width:475px) {
+    .mobile-menu{
+        width: 100%;
+    }
+}
